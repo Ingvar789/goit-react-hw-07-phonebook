@@ -19,7 +19,6 @@ const PhonebookForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-
     const contactName = contact.name.toLowerCase();
     if (contacts.find(contact => contact.name.toLowerCase() === contactName)) {
       alert(`${contact.name} is already in contacts.`);
